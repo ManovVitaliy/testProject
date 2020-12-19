@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ReservationsListViewControllerProtocol: class {
-    
+    func needUpdateTableViewWith(reservations: [ReservationProtocol])
 }
 
 class ReservationsListViewController: UIViewController {
@@ -20,13 +20,16 @@ class ReservationsListViewController: UIViewController {
     //MARK: - viewcontroller's lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.getReservations()
     }
     
     //MARK: - appearance
 }
 
 extension ReservationsListViewController: ReservationsListViewControllerProtocol {
-    
+    func needUpdateTableViewWith(reservations: [ReservationProtocol]) {
+        print(reservations)
+    }
 }
 
 extension ReservationsListViewController {

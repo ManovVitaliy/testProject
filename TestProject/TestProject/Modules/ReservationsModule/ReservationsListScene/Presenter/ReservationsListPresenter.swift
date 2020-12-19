@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ReservationsListPresenterProtocol: class {
-    
+    func getReservations()
 }
 
 protocol ReservationsListPresenterDelegate {
@@ -29,9 +29,13 @@ class ReservationsListPresenter {
 }
 
 extension ReservationsListPresenter: ReservationsListPresenterProtocol {
-
+    func getReservations() {
+        model?.getReservations()
+    }
 }
 
 extension ReservationsListPresenter: ReservationsListModelDelegate {
-    
+    func hadleGetReservationsListResponse(reservations: [ReservationProtocol]) {
+        view?.needUpdateTableViewWith(reservations: reservations)
+    }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE497624258E71CA00377726 /* MapReservationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497623258E71CA00377726 /* MapReservationsService.swift */; };
+		CE497629258E75C700377726 /* AnyTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497628258E75C700377726 /* AnyTransport.swift */; };
 		CE8E51B3258E2A1300CB6461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51B2258E2A1300CB6461 /* AppDelegate.swift */; };
 		CE8E51B7258E2A1300CB6461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51B6258E2A1300CB6461 /* ViewController.swift */; };
 		CE8E51BA258E2A1300CB6461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E51B8258E2A1300CB6461 /* Main.storyboard */; };
@@ -20,9 +22,19 @@
 		CE8E51FC258E32DF00CB6461 /* ReservationsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51FB258E32DF00CB6461 /* ReservationsModuleFactory.swift */; };
 		CE8E5200258E32EC00CB6461 /* ReservationsModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51FF258E32EC00CB6461 /* ReservationsModuleCoordinator.swift */; };
 		CE8E5203258E341600CB6461 /* Reservations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E5202258E341600CB6461 /* Reservations.storyboard */; };
+		CE8E520F258E3AF100CB6461 /* Ebike.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E520E258E3AF100CB6461 /* Ebike.swift */; };
+		CE8E5212258E3B3900CB6461 /* Shuttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E5211258E3B3900CB6461 /* Shuttle.swift */; };
+		CE8E5215258E3B7C00CB6461 /* PublicTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E5214258E3B7C00CB6461 /* PublicTransport.swift */; };
+		CE8E5218258E3BAC00CB6461 /* PublicTransportVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E5217258E3BAC00CB6461 /* PublicTransportVehicle.swift */; };
+		CE8E521B258E3BB700CB6461 /* ShuttleVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E521A258E3BB700CB6461 /* ShuttleVehicle.swift */; };
+		CE8E521E258E3BC100CB6461 /* EbikeVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E521D258E3BC100CB6461 /* EbikeVehicle.swift */; };
+		CE8E522C258E3D8A00CB6461 /* ReservationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E522B258E3D8A00CB6461 /* ReservationProtocol.swift */; };
+		CE8E5231258E4D1300CB6461 /* reservations.json in Resources */ = {isa = PBXBuildFile; fileRef = CE8E5230258E4D1300CB6461 /* reservations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE497623258E71CA00377726 /* MapReservationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapReservationsService.swift; sourceTree = "<group>"; };
+		CE497628258E75C700377726 /* AnyTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransport.swift; sourceTree = "<group>"; };
 		CE8E51AF258E2A1300CB6461 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E51B2258E2A1300CB6461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E51B6258E2A1300CB6461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +50,14 @@
 		CE8E51FB258E32DF00CB6461 /* ReservationsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsModuleFactory.swift; sourceTree = "<group>"; };
 		CE8E51FF258E32EC00CB6461 /* ReservationsModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsModuleCoordinator.swift; sourceTree = "<group>"; };
 		CE8E5202258E341600CB6461 /* Reservations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reservations.storyboard; sourceTree = "<group>"; };
+		CE8E520E258E3AF100CB6461 /* Ebike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ebike.swift; sourceTree = "<group>"; };
+		CE8E5211258E3B3900CB6461 /* Shuttle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuttle.swift; sourceTree = "<group>"; };
+		CE8E5214258E3B7C00CB6461 /* PublicTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTransport.swift; sourceTree = "<group>"; };
+		CE8E5217258E3BAC00CB6461 /* PublicTransportVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTransportVehicle.swift; sourceTree = "<group>"; };
+		CE8E521A258E3BB700CB6461 /* ShuttleVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleVehicle.swift; sourceTree = "<group>"; };
+		CE8E521D258E3BC100CB6461 /* EbikeVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbikeVehicle.swift; sourceTree = "<group>"; };
+		CE8E522B258E3D8A00CB6461 /* ReservationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationProtocol.swift; sourceTree = "<group>"; };
+		CE8E5230258E4D1300CB6461 /* reservations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = reservations.json; path = ../../../../../../../Downloads/reservations.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE497621258E718C00377726 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE497622258E719B00377726 /* MapReservationsService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE497622258E719B00377726 /* MapReservationsService */ = {
+			isa = PBXGroup;
+			children = (
+				CE497623258E71CA00377726 /* MapReservationsService.swift */,
+			);
+			path = MapReservationsService;
+			sourceTree = "<group>";
+		};
+		CE497627258E75B500377726 /* AnyTransport */ = {
+			isa = PBXGroup;
+			children = (
+				CE497628258E75C700377726 /* AnyTransport.swift */,
+			);
+			path = AnyTransport;
+			sourceTree = "<group>";
+		};
 		CE8E51A6258E2A1300CB6461 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +114,9 @@
 		CE8E51B1258E2A1300CB6461 /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				CE497621258E718C00377726 /* Services */,
+				CE8E5228258E3D6400CB6461 /* Helpers */,
+				CE8E5206258E391B00CB6461 /* Entities */,
 				CE8E51E2258E2F4700CB6461 /* Storyboards */,
 				CE8E51E1258E2F3B00CB6461 /* Modules */,
 				CE8E51DA258E2E4D00CB6461 /* Application */,
@@ -111,6 +158,7 @@
 		CE8E51DE258E2EA000CB6461 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE8E522F258E4CEE00CB6461 /* ReservationsData */,
 				CE8E51BB258E2A1600CB6461 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -200,6 +248,108 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		CE8E5206258E391B00CB6461 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CE497627258E75B500377726 /* AnyTransport */,
+				CE8E520A258E39DF00CB6461 /* Vehicle */,
+				CE8E5209258E398900CB6461 /* PublicTransport */,
+				CE8E5208258E397600CB6461 /* Shuttle */,
+				CE8E5207258E395A00CB6461 /* Ebike */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CE8E5207258E395A00CB6461 /* Ebike */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E520E258E3AF100CB6461 /* Ebike.swift */,
+			);
+			path = Ebike;
+			sourceTree = "<group>";
+		};
+		CE8E5208258E397600CB6461 /* Shuttle */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E5211258E3B3900CB6461 /* Shuttle.swift */,
+			);
+			path = Shuttle;
+			sourceTree = "<group>";
+		};
+		CE8E5209258E398900CB6461 /* PublicTransport */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E5214258E3B7C00CB6461 /* PublicTransport.swift */,
+			);
+			path = PublicTransport;
+			sourceTree = "<group>";
+		};
+		CE8E520A258E39DF00CB6461 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E520D258E3A1B00CB6461 /* PublicTransportVehicle */,
+				CE8E520C258E3A0F00CB6461 /* ShuttleVehicle */,
+				CE8E520B258E3A0100CB6461 /* EbikeVehicle */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		CE8E520B258E3A0100CB6461 /* EbikeVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E521D258E3BC100CB6461 /* EbikeVehicle.swift */,
+			);
+			path = EbikeVehicle;
+			sourceTree = "<group>";
+		};
+		CE8E520C258E3A0F00CB6461 /* ShuttleVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E521A258E3BB700CB6461 /* ShuttleVehicle.swift */,
+			);
+			path = ShuttleVehicle;
+			sourceTree = "<group>";
+		};
+		CE8E520D258E3A1B00CB6461 /* PublicTransportVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E5217258E3BAC00CB6461 /* PublicTransportVehicle.swift */,
+			);
+			path = PublicTransportVehicle;
+			sourceTree = "<group>";
+		};
+		CE8E5228258E3D6400CB6461 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E5229258E3D6900CB6461 /* Protocols */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CE8E5229258E3D6900CB6461 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E522A258E3D7100CB6461 /* ReservationProtocol */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CE8E522A258E3D7100CB6461 /* ReservationProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E522B258E3D8A00CB6461 /* ReservationProtocol.swift */,
+			);
+			path = ReservationProtocol;
+			sourceTree = "<group>";
+		};
+		CE8E522F258E4CEE00CB6461 /* ReservationsData */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E5230258E4D1300CB6461 /* reservations.json */,
+			);
+			path = ReservationsData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,6 +411,7 @@
 				CE8E51BC258E2A1600CB6461 /* Assets.xcassets in Resources */,
 				CE8E51BA258E2A1300CB6461 /* Main.storyboard in Resources */,
 				CE8E5203258E341600CB6461 /* Reservations.storyboard in Resources */,
+				CE8E5231258E4D1300CB6461 /* reservations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +423,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8E51F7258E316A00CB6461 /* ReservationsListModel.swift in Sources */,
+				CE497624258E71CA00377726 /* MapReservationsService.swift in Sources */,
 				CE8E51F1258E314900CB6461 /* ReservationsListViewController.swift in Sources */,
 				CE8E5200258E32EC00CB6461 /* ReservationsModuleCoordinator.swift in Sources */,
 				CE8E51F4258E315C00CB6461 /* ReservationsListPresenter.swift in Sources */,
+				CE8E5215258E3B7C00CB6461 /* PublicTransport.swift in Sources */,
 				CE8E51E8258E2F9600CB6461 /* AppCoordinator.swift in Sources */,
 				CE8E51B7258E2A1300CB6461 /* ViewController.swift in Sources */,
+				CE8E5212258E3B3900CB6461 /* Shuttle.swift in Sources */,
+				CE8E521B258E3BB700CB6461 /* ShuttleVehicle.swift in Sources */,
 				CE8E51FC258E32DF00CB6461 /* ReservationsModuleFactory.swift in Sources */,
 				CE8E51B3258E2A1300CB6461 /* AppDelegate.swift in Sources */,
+				CE497629258E75C700377726 /* AnyTransport.swift in Sources */,
+				CE8E521E258E3BC100CB6461 /* EbikeVehicle.swift in Sources */,
+				CE8E520F258E3AF100CB6461 /* Ebike.swift in Sources */,
+				CE8E5218258E3BAC00CB6461 /* PublicTransportVehicle.swift in Sources */,
 				CE8E51E4258E2F6B00CB6461 /* Coordinator.swift in Sources */,
+				CE8E522C258E3D8A00CB6461 /* ReservationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
