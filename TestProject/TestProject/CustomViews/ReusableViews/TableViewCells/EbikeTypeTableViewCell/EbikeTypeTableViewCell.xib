@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="EbikeTypeTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="EbikeTypeTableViewCell" rowHeight="91" id="KGk-i7-Jjw" customClass="EbikeTypeTableViewCell" customModule="TestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ebike" translatesAutoresizingMaskIntoConstraints="NO" id="7P5-dD-350">
+                        <rect key="frame" x="16" y="34" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7P5-dD-350" secondAttribute="height" multiplier="1:1" id="J6l-Tv-Vv1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eBike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysW-84-NL9">
+                        <rect key="frame" x="9.5" y="59" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yna-em-qz7">
+                        <rect key="frame" x="268" y="4" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkl-nO-oZu">
+                        <rect key="frame" x="280" y="23" width="24" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FromToLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hw4-oY-dhB">
+                        <rect key="frame" x="242.5" y="75" width="61.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVX-kc-vAS">
+                        <rect key="frame" x="276" y="39.5" width="28" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ysW-84-NL9" firstAttribute="top" secondItem="7P5-dD-350" secondAttribute="bottom" constant="2" id="20P-to-TZD"/>
+                    <constraint firstItem="yna-em-qz7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="4BD-LR-ws3"/>
+                    <constraint firstItem="hw4-oY-dhB" firstAttribute="trailing" secondItem="yna-em-qz7" secondAttribute="trailing" id="C9i-fL-wD4"/>
+                    <constraint firstItem="XVX-kc-vAS" firstAttribute="trailing" secondItem="yna-em-qz7" secondAttribute="trailing" id="GVN-JE-sg4"/>
+                    <constraint firstItem="7P5-dD-350" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.25" id="JJA-bA-PUR"/>
+                    <constraint firstAttribute="trailing" secondItem="yna-em-qz7" secondAttribute="trailing" constant="16" id="NWj-dl-jKt"/>
+                    <constraint firstItem="XVX-kc-vAS" firstAttribute="top" secondItem="Kkl-nO-oZu" secondAttribute="bottom" constant="2" id="T0a-9a-JOx"/>
+                    <constraint firstItem="Kkl-nO-oZu" firstAttribute="trailing" secondItem="yna-em-qz7" secondAttribute="trailing" id="XnD-Ps-lGw"/>
+                    <constraint firstAttribute="bottom" secondItem="hw4-oY-dhB" secondAttribute="bottom" constant="4" id="gb5-Cb-N5d"/>
+                    <constraint firstItem="Kkl-nO-oZu" firstAttribute="top" secondItem="yna-em-qz7" secondAttribute="bottom" constant="2" id="jCk-Tx-zOf"/>
+                    <constraint firstItem="7P5-dD-350" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pOX-2K-Jd4"/>
+                    <constraint firstItem="7P5-dD-350" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xcO-yQ-LHe"/>
+                    <constraint firstItem="ysW-84-NL9" firstAttribute="centerX" secondItem="7P5-dD-350" secondAttribute="centerX" id="yfB-as-ll0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ebikeImageView" destination="7P5-dD-350" id="U1K-Gt-y4b"/>
+                <outlet property="ebikeSizeLabel" destination="XVX-kc-vAS" id="fXA-JL-dLD"/>
+                <outlet property="ebikeTagLabel" destination="Kkl-nO-oZu" id="ID3-X9-HGb"/>
+                <outlet property="ebikeTypeLabel" destination="yna-em-qz7" id="3H4-9A-axt"/>
+                <outlet property="fromToLabel" destination="hw4-oY-dhB" id="NtX-IR-i50"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="86.71875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ebike" width="30" height="30"/>
+    </resources>
+</document>

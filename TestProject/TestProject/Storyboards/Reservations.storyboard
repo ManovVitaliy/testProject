@@ -15,13 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="kYT-4l-fLe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lj1-um-pnT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2Kf-QW-gIk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lj1-um-pnT" firstAttribute="top" secondItem="2Kf-QW-gIk" secondAttribute="top" id="LbP-JU-5jG"/>
+                            <constraint firstAttribute="bottom" secondItem="lj1-um-pnT" secondAttribute="bottom" id="caj-sj-qVg"/>
+                            <constraint firstItem="lj1-um-pnT" firstAttribute="leading" secondItem="kYT-4l-fLe" secondAttribute="leading" id="itY-y3-kfc"/>
+                            <constraint firstAttribute="trailing" secondItem="lj1-um-pnT" secondAttribute="trailing" id="ljX-Aq-m4P"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="reservationsTableView" destination="lj1-um-pnT" id="AU7-Ip-qCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nun-zO-QjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="78"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>

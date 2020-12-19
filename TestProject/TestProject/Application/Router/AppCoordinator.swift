@@ -42,6 +42,7 @@ class AppCoordinator: Coordinator {
     func setupWindow() {
         self.window.rootViewController = rootViewController
         self.window.makeKeyAndVisible()
+        self.window.overrideUserInterfaceStyle = .light
     }
     
     func setupStarterCoordinator() {
