@@ -12,6 +12,14 @@
 		CE8E51BA258E2A1300CB6461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E51B8258E2A1300CB6461 /* Main.storyboard */; };
 		CE8E51BC258E2A1600CB6461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8E51BB258E2A1600CB6461 /* Assets.xcassets */; };
 		CE8E51BF258E2A1600CB6461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E51BD258E2A1600CB6461 /* LaunchScreen.storyboard */; };
+		CE8E51E4258E2F6B00CB6461 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51E3258E2F6B00CB6461 /* Coordinator.swift */; };
+		CE8E51E8258E2F9600CB6461 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51E7258E2F9600CB6461 /* AppCoordinator.swift */; };
+		CE8E51F1258E314900CB6461 /* ReservationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51F0258E314900CB6461 /* ReservationsListViewController.swift */; };
+		CE8E51F4258E315C00CB6461 /* ReservationsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51F3258E315C00CB6461 /* ReservationsListPresenter.swift */; };
+		CE8E51F7258E316A00CB6461 /* ReservationsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51F6258E316A00CB6461 /* ReservationsListModel.swift */; };
+		CE8E51FC258E32DF00CB6461 /* ReservationsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51FB258E32DF00CB6461 /* ReservationsModuleFactory.swift */; };
+		CE8E5200258E32EC00CB6461 /* ReservationsModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51FF258E32EC00CB6461 /* ReservationsModuleCoordinator.swift */; };
+		CE8E5203258E341600CB6461 /* Reservations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E5202258E341600CB6461 /* Reservations.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		CE8E51BB258E2A1600CB6461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8E51BE258E2A1600CB6461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8E51C0258E2A1600CB6461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8E51E3258E2F6B00CB6461 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CE8E51E7258E2F9600CB6461 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CE8E51F0258E314900CB6461 /* ReservationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsListViewController.swift; sourceTree = "<group>"; };
+		CE8E51F3258E315C00CB6461 /* ReservationsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsListPresenter.swift; sourceTree = "<group>"; };
+		CE8E51F6258E316A00CB6461 /* ReservationsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsListModel.swift; sourceTree = "<group>"; };
+		CE8E51FB258E32DF00CB6461 /* ReservationsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsModuleFactory.swift; sourceTree = "<group>"; };
+		CE8E51FF258E32EC00CB6461 /* ReservationsModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsModuleCoordinator.swift; sourceTree = "<group>"; };
+		CE8E5202258E341600CB6461 /* Reservations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reservations.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,134 @@
 		CE8E51B1258E2A1300CB6461 /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
-				CE8E51B2258E2A1300CB6461 /* AppDelegate.swift */,
+				CE8E51E2258E2F4700CB6461 /* Storyboards */,
+				CE8E51E1258E2F3B00CB6461 /* Modules */,
+				CE8E51DA258E2E4D00CB6461 /* Application */,
+				CE8E51C0258E2A1600CB6461 /* Info.plist */,
 				CE8E51B6258E2A1300CB6461 /* ViewController.swift */,
 				CE8E51B8258E2A1300CB6461 /* Main.storyboard */,
-				CE8E51BB258E2A1600CB6461 /* Assets.xcassets */,
 				CE8E51BD258E2A1600CB6461 /* LaunchScreen.storyboard */,
-				CE8E51C0258E2A1600CB6461 /* Info.plist */,
 			);
 			path = TestProject;
+			sourceTree = "<group>";
+		};
+		CE8E51DA258E2E4D00CB6461 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51B2258E2A1300CB6461 /* AppDelegate.swift */,
+				CE8E51DE258E2EA000CB6461 /* Resources */,
+				CE8E51DD258E2E9200CB6461 /* Router */,
+				CE8E51DC258E2E8D00CB6461 /* Base */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CE8E51DC258E2E8D00CB6461 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE8E51DD258E2E9200CB6461 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51E3258E2F6B00CB6461 /* Coordinator.swift */,
+				CE8E51E7258E2F9600CB6461 /* AppCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE8E51DE258E2EA000CB6461 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51BB258E2A1600CB6461 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE8E51E1258E2F3B00CB6461 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51EA258E30CC00CB6461 /* ReservationsModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE8E51E2258E2F4700CB6461 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E5202258E341600CB6461 /* Reservations.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE8E51EA258E30CC00CB6461 /* ReservationsModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51EB258E30E000CB6461 /* ReservationsModuleFactory */,
+				CE8E51EC258E30EE00CB6461 /* ReservationsListScene */,
+			);
+			path = ReservationsModule;
+			sourceTree = "<group>";
+		};
+		CE8E51EB258E30E000CB6461 /* ReservationsModuleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51FA258E32C400CB6461 /* Factory */,
+				CE8E51F9258E32BD00CB6461 /* Coordinator */,
+			);
+			path = ReservationsModuleFactory;
+			sourceTree = "<group>";
+		};
+		CE8E51EC258E30EE00CB6461 /* ReservationsListScene */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51EF258E310800CB6461 /* View */,
+				CE8E51EE258E310100CB6461 /* Presenter */,
+				CE8E51ED258E30FD00CB6461 /* Model */,
+			);
+			path = ReservationsListScene;
+			sourceTree = "<group>";
+		};
+		CE8E51ED258E30FD00CB6461 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51F6258E316A00CB6461 /* ReservationsListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE8E51EE258E310100CB6461 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51F3258E315C00CB6461 /* ReservationsListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE8E51EF258E310800CB6461 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51F0258E314900CB6461 /* ReservationsListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE8E51F9258E32BD00CB6461 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51FF258E32EC00CB6461 /* ReservationsModuleCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CE8E51FA258E32C400CB6461 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E51FB258E32DF00CB6461 /* ReservationsModuleFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +260,7 @@
 				CE8E51BF258E2A1600CB6461 /* LaunchScreen.storyboard in Resources */,
 				CE8E51BC258E2A1600CB6461 /* Assets.xcassets in Resources */,
 				CE8E51BA258E2A1300CB6461 /* Main.storyboard in Resources */,
+				CE8E5203258E341600CB6461 /* Reservations.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +271,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8E51F7258E316A00CB6461 /* ReservationsListModel.swift in Sources */,
+				CE8E51F1258E314900CB6461 /* ReservationsListViewController.swift in Sources */,
+				CE8E5200258E32EC00CB6461 /* ReservationsModuleCoordinator.swift in Sources */,
+				CE8E51F4258E315C00CB6461 /* ReservationsListPresenter.swift in Sources */,
+				CE8E51E8258E2F9600CB6461 /* AppCoordinator.swift in Sources */,
 				CE8E51B7258E2A1300CB6461 /* ViewController.swift in Sources */,
+				CE8E51FC258E32DF00CB6461 /* ReservationsModuleFactory.swift in Sources */,
 				CE8E51B3258E2A1300CB6461 /* AppDelegate.swift in Sources */,
+				CE8E51E4258E2F6B00CB6461 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
