@@ -23,6 +23,11 @@
 		CE497660258EBFA000377726 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49765F258EBFA000377726 /* Date+Extension.swift */; };
 		CE497665258EC1B000377726 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497664258EC1B000377726 /* DateService.swift */; };
 		CE49766A258EC49700377726 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497669258EC49700377726 /* UIColor+Extension.swift */; };
+		CE49766E258ECA8200377726 /* ReservationsTypeCollectionViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49766D258ECA8200377726 /* ReservationsTypeCollectionViewFactory.swift */; };
+		CE497675258ECC3700377726 /* ReservationTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497673258ECC3700377726 /* ReservationTypeCollectionViewCell.swift */; };
+		CE497676258ECC3700377726 /* ReservationTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE497674258ECC3700377726 /* ReservationTypeCollectionViewCell.xib */; };
+		CE49767A258ECCCE00377726 /* ReservationTypeCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497679258ECCCE00377726 /* ReservationTypeCollectionViewCellModel.swift */; };
+		CE49767F258ECDC300377726 /* ReserevationTypeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49767E258ECDC300377726 /* ReserevationTypeEntity.swift */; };
 		CE8E51B3258E2A1300CB6461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51B2258E2A1300CB6461 /* AppDelegate.swift */; };
 		CE8E51B7258E2A1300CB6461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51B6258E2A1300CB6461 /* ViewController.swift */; };
 		CE8E51BA258E2A1300CB6461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E51B8258E2A1300CB6461 /* Main.storyboard */; };
@@ -63,6 +68,11 @@
 		CE49765F258EBFA000377726 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		CE497664258EC1B000377726 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
 		CE497669258EC49700377726 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CE49766D258ECA8200377726 /* ReservationsTypeCollectionViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsTypeCollectionViewFactory.swift; sourceTree = "<group>"; };
+		CE497673258ECC3700377726 /* ReservationTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE497674258ECC3700377726 /* ReservationTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReservationTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE497679258ECCCE00377726 /* ReservationTypeCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTypeCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		CE49767E258ECDC300377726 /* ReserevationTypeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserevationTypeEntity.swift; sourceTree = "<group>"; };
 		CE8E51AF258E2A1300CB6461 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E51B2258E2A1300CB6461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E51B6258E2A1300CB6461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +137,8 @@
 		CE49762E258E76EA00377726 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CE49767C258ECDA800377726 /* Entities */,
+				CE49766C258ECA5E00377726 /* CollectionViewFactory */,
 				CE49762F258E76F200377726 /* TableViewFactory */,
 			);
 			path = Helpers;
@@ -151,6 +163,7 @@
 		CE497635258E77D500377726 /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
+				CE497671258ECC0700377726 /* CollectionViewCells */,
 				CE497636258E77DD00377726 /* TableViewCells */,
 			);
 			path = ReusableViews;
@@ -260,6 +273,56 @@
 				CE497669258EC49700377726 /* UIColor+Extension.swift */,
 			);
 			path = "UIColor+Extension";
+			sourceTree = "<group>";
+		};
+		CE49766C258ECA5E00377726 /* CollectionViewFactory */ = {
+			isa = PBXGroup;
+			children = (
+				CE49766D258ECA8200377726 /* ReservationsTypeCollectionViewFactory.swift */,
+			);
+			path = CollectionViewFactory;
+			sourceTree = "<group>";
+		};
+		CE497671258ECC0700377726 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE497672258ECC1900377726 /* ReservationTypeCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		CE497672258ECC1900377726 /* ReservationTypeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE497678258ECCBB00377726 /* ReservationTypeCollectionViewCellModel */,
+				CE497673258ECC3700377726 /* ReservationTypeCollectionViewCell.swift */,
+				CE497674258ECC3700377726 /* ReservationTypeCollectionViewCell.xib */,
+			);
+			path = ReservationTypeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		CE497678258ECCBB00377726 /* ReservationTypeCollectionViewCellModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE497679258ECCCE00377726 /* ReservationTypeCollectionViewCellModel.swift */,
+			);
+			path = ReservationTypeCollectionViewCellModel;
+			sourceTree = "<group>";
+		};
+		CE49767C258ECDA800377726 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CE49767D258ECDB000377726 /* ReserevationTypeEntity */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CE49767D258ECDB000377726 /* ReserevationTypeEntity */ = {
+			isa = PBXGroup;
+			children = (
+				CE49767E258ECDC300377726 /* ReserevationTypeEntity.swift */,
+			);
+			path = ReserevationTypeEntity;
 			sourceTree = "<group>";
 		};
 		CE8E51A6258E2A1300CB6461 = {
@@ -581,6 +644,7 @@
 				CE8E51BF258E2A1600CB6461 /* LaunchScreen.storyboard in Resources */,
 				CE8E51BC258E2A1600CB6461 /* Assets.xcassets in Resources */,
 				CE8E51BA258E2A1300CB6461 /* Main.storyboard in Resources */,
+				CE497676258ECC3700377726 /* ReservationTypeCollectionViewCell.xib in Resources */,
 				CE49763D258E78A400377726 /* ShuttleTypeTableViewCell.xib in Resources */,
 				CE8E5203258E341600CB6461 /* Reservations.storyboard in Resources */,
 				CE497643258E78B900377726 /* PublicTransportTypeTableViewCell.xib in Resources */,
@@ -598,9 +662,11 @@
 				CE8E51F7258E316A00CB6461 /* ReservationsListModel.swift in Sources */,
 				CE497624258E71CA00377726 /* MapReservationsService.swift in Sources */,
 				CE8E51F1258E314900CB6461 /* ReservationsListViewController.swift in Sources */,
+				CE497675258ECC3700377726 /* ReservationTypeCollectionViewCell.swift in Sources */,
 				CE8E5200258E32EC00CB6461 /* ReservationsModuleCoordinator.swift in Sources */,
 				CE49764C258E7F0F00377726 /* ShuttleTypeTableViewCellModel.swift in Sources */,
 				CE8E51F4258E315C00CB6461 /* ReservationsListPresenter.swift in Sources */,
+				CE49766E258ECA8200377726 /* ReservationsTypeCollectionViewFactory.swift in Sources */,
 				CE49765C258EBF8E00377726 /* String+Extension.swift in Sources */,
 				CE8E5215258E3B7C00CB6461 /* PublicTransport.swift in Sources */,
 				CE497660258EBFA000377726 /* Date+Extension.swift in Sources */,
@@ -612,6 +678,8 @@
 				CE8E51FC258E32DF00CB6461 /* ReservationsModuleFactory.swift in Sources */,
 				CE8E51B3258E2A1300CB6461 /* AppDelegate.swift in Sources */,
 				CE497629258E75C700377726 /* AnyTransport.swift in Sources */,
+				CE49767A258ECCCE00377726 /* ReservationTypeCollectionViewCellModel.swift in Sources */,
+				CE49767F258ECDC300377726 /* ReserevationTypeEntity.swift in Sources */,
 				CE497656258E7F3E00377726 /* EbikeTypeTableViewCellModel.swift in Sources */,
 				CE497642258E78B900377726 /* PublicTransportTypeTableViewCell.swift in Sources */,
 				CE49766A258EC49700377726 /* UIColor+Extension.swift in Sources */,
@@ -781,7 +849,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CHISW.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -801,7 +869,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CHISW.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

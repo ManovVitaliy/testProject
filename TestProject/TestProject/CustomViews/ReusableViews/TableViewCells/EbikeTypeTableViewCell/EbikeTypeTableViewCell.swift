@@ -17,6 +17,7 @@ class EbikeTypeTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
     }
     
     func setupCell(model: EbikeTypeTableViewCellModel) {

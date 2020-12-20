@@ -19,6 +19,7 @@ class ShuttleTypeTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
     }
     
     func setupCell(model: ShuttleTypeTableViewCellModel) {

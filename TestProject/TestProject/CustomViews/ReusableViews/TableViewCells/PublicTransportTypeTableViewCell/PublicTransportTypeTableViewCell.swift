@@ -18,6 +18,7 @@ class PublicTransportTypeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
     }
     
     func setupCell(model: PublicTransportTypeTableViewCellModel) {

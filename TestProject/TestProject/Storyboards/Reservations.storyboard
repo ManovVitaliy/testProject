@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,21 +18,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lj1-um-pnT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kp1-fj-4P0">
+                                <rect key="frame" x="16" y="49" width="382" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eAk-DX-Xuh"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KB1-ln-mQK">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xtg-dr-15h">
+                                        <rect key="frame" x="0.0" y="-44" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lo2-LU-IzE">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Kf-QW-gIk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="lj1-um-pnT" firstAttribute="top" secondItem="2Kf-QW-gIk" secondAttribute="top" id="LbP-JU-5jG"/>
+                            <constraint firstItem="Kp1-fj-4P0" firstAttribute="top" secondItem="2Kf-QW-gIk" secondAttribute="top" constant="5" id="0Zn-rz-dLv"/>
+                            <constraint firstItem="lj1-um-pnT" firstAttribute="top" secondItem="Kp1-fj-4P0" secondAttribute="bottom" constant="5" id="cHQ-kJ-BpI"/>
+                            <constraint firstItem="Kp1-fj-4P0" firstAttribute="trailing" secondItem="2Kf-QW-gIk" secondAttribute="trailing" constant="-16" id="cOs-PV-cgb"/>
                             <constraint firstAttribute="bottom" secondItem="lj1-um-pnT" secondAttribute="bottom" id="caj-sj-qVg"/>
                             <constraint firstItem="lj1-um-pnT" firstAttribute="leading" secondItem="kYT-4l-fLe" secondAttribute="leading" id="itY-y3-kfc"/>
                             <constraint firstAttribute="trailing" secondItem="lj1-um-pnT" secondAttribute="trailing" id="ljX-Aq-m4P"/>
+                            <constraint firstItem="Kp1-fj-4P0" firstAttribute="leading" secondItem="2Kf-QW-gIk" secondAttribute="leading" constant="16" id="xG6-nM-NqI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="reservationsTableView" destination="lj1-um-pnT" id="AU7-Ip-qCd"/>
+                        <outlet property="reservationsTypeCollectionView" destination="Kp1-fj-4P0" id="UBo-iU-SYN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nun-zO-QjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
