@@ -19,7 +19,7 @@ struct AnyTransport: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         let type = try container.decode(TransportType.self, forKey: .type)
-        self.base = try type.metatype.init(from: decoder)//try type.metatype.init(from: container.superDecoder(forKey: .base))
+        self.base = try type.metatype.init(from: decoder)
     }
 
     func encode(to encoder: Encoder) throws {

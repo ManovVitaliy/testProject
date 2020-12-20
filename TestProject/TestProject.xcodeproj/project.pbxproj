@@ -28,6 +28,7 @@
 		CE497676258ECC3700377726 /* ReservationTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE497674258ECC3700377726 /* ReservationTypeCollectionViewCell.xib */; };
 		CE49767A258ECCCE00377726 /* ReservationTypeCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497679258ECCCE00377726 /* ReservationTypeCollectionViewCellModel.swift */; };
 		CE49767F258ECDC300377726 /* ReserevationTypeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49767E258ECDC300377726 /* ReserevationTypeEntity.swift */; };
+		CE497687258EE04300377726 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497686258EE04300377726 /* BaseViewController.swift */; };
 		CE8E51B3258E2A1300CB6461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51B2258E2A1300CB6461 /* AppDelegate.swift */; };
 		CE8E51B7258E2A1300CB6461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E51B6258E2A1300CB6461 /* ViewController.swift */; };
 		CE8E51BA258E2A1300CB6461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E51B8258E2A1300CB6461 /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		CE497674258ECC3700377726 /* ReservationTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReservationTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE497679258ECCCE00377726 /* ReservationTypeCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTypeCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		CE49767E258ECDC300377726 /* ReserevationTypeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserevationTypeEntity.swift; sourceTree = "<group>"; };
+		CE497686258EE04300377726 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CE8E51AF258E2A1300CB6461 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E51B2258E2A1300CB6461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E51B6258E2A1300CB6461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		CE8E51DC258E2E8D00CB6461 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				CE497686258EE04300377726 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -666,6 +669,7 @@
 				CE8E5200258E32EC00CB6461 /* ReservationsModuleCoordinator.swift in Sources */,
 				CE49764C258E7F0F00377726 /* ShuttleTypeTableViewCellModel.swift in Sources */,
 				CE8E51F4258E315C00CB6461 /* ReservationsListPresenter.swift in Sources */,
+				CE497687258EE04300377726 /* BaseViewController.swift in Sources */,
 				CE49766E258ECA8200377726 /* ReservationsTypeCollectionViewFactory.swift in Sources */,
 				CE49765C258EBF8E00377726 /* String+Extension.swift in Sources */,
 				CE8E5215258E3B7C00CB6461 /* PublicTransport.swift in Sources */,

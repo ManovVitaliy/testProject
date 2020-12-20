@@ -13,7 +13,7 @@ protocol ReservationsListViewControllerProtocol: class {
     func updateFilteredReservations(reservations: [ReservationProtocol])
 }
 
-class ReservationsListViewController: UIViewController {
+class ReservationsListViewController: BaseViewController {
     //MARK: - outlets
     @IBOutlet weak var reservationsTableView: UITableView!
     @IBOutlet weak var reservationsTypeCollectionView: UICollectionView!
